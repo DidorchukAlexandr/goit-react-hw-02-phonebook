@@ -27,9 +27,7 @@ export default class FormContacts extends Component {
       contact => contact.name.toLocaleLowerCase() === normalizedFilter
     );
 
-    checkName
-      ? alert('Rosie Simpson is already in contacts.')
-      : this.handlSubmit();
+    checkName ? alert(`${name} is already in contacts.`) : this.handlSubmit();
   };
 
   reset = () => {
